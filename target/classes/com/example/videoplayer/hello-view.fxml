@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.videoplayer.HelloController">
+   <children>
+      <MediaView fx:id="mediaV" fitHeight="330.0" fitWidth="615.0" layoutX="5.0" layoutY="5.0" />
+      <HBox layoutX="-1.0" layoutY="353.0" prefHeight="47.0" prefWidth="600.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#chosse" text="Chose A file">
+               <HBox.margin>
+                  <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="run" mnemonicParsing="false" onAction="#runv" prefHeight="26.0" prefWidth="42.0" text="run">
+               <HBox.margin>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="stopv" mnemonicParsing="false" onAction="#stopv" text="stop">
+               <HBox.margin>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="pouse" mnemonicParsing="false" onAction="#pouse" text="pous">
+               <HBox.margin>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="+10 s ">
+               <HBox.margin>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="+10 s ">
+               <HBox.margin>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+               </HBox.margin>
+            </Button>
+            <Slider fx:id="vol" min="0" max="1" onDragDetected="#onvol">
+               <HBox.margin>
+                  <Insets bottom="7.0" left="7.0" right="7.0" top="13.0" />
+               </HBox.margin>
+            </Slider>
+         </children>
+      </HBox>
+      <Slider fx:id="seek" layoutX="18.0" layoutY="339.0" prefHeight="14.0" prefWidth="562.0" />
+      <MediaView fx:id="mediaV1" fitHeight="200.0" fitWidth="200.0" layoutX="199.0" layoutY="89.0" />
+      <MediaView fx:id="mediaV11" fitHeight="340.0" fitWidth="600.0" />
+   </children>
+</AnchorPane>
